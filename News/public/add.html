@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>News</title>
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+    </head>
+    <body>
+        <div class="header">
+            <h3>News HEADQUARTERS</h3>
+            <h4>Add an article</h4>
+        </div>
+        <div class="center" id="container">
+            <form method='POST' action='post'>
+                <div id="post" class="block">
+                    <label class="control-label">input title</label>
+                    <input id="title" type="text" name="title" class="control-input" placeholder="Title"/>
+                </div>
+                <div id="post" class="block">
+                    <label class="control-label">input original link</label>
+                    <input id="link" type="text" name="link" class="control-input" placeholder="Link"/>
+                </div>
+                <div id="post" class="block">
+                    <label class="control-label">From</label>
+                    <input id="from" type="text" name="from" class="control-input" placeholder="From"/>
+                </div>
+                <div id="post" class="block">
+                    <label class="control-label">Stylesheets</label>
+                    <input id="stylesheet" type="text" name="stylesheets" class="control-input" placeholder="Stylesheets"/>
+                </div>
+                <div id="post" class="block">
+                    <label class="control-label">Scripts</label>
+                    <input id="script" type="text" name="scripts" class="control-input" placeholder="Scripts"/>
+                </div>
+
+                <div id="post" class="block">
+                    <h3><label>Insert Article</label></h3>
+                    <textarea id="article" cols=120 rows=80 name="article" name="article"></textarea>
+                </div>
+
+                <div class="block">
+                    <input type="submit" class="btn input" id="form-submit" value="Blog Post">
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript">
+            let page = 'add';
+        </script>
+        <script src="js/app.js" type="text/javascript"></script>
+    </body>
+</html>
+
